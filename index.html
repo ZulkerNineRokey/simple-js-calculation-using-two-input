@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="text" id="firstNumber" /><br>
+<input type="text" id="secondNumber" /><br>
+
+<button type="submit" onclick="add()">calculation</button>
+
+
+<p>
+<span id = "result"></span>
+</p>
+
+    <script>
+       
+        function add()
+        {
+            firstnum = document.getElementById("firstNumber").value;
+            lastnum = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = parseInt(firstnum)+parseInt(lastnum);
+        }
+    </script>
+</body>
+</html>
